@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-int main () {
+int main()
+{
     int opcao;
     float num1, num2, resultado;
-    
-    
 
+    // coleta de dados
     printf("Digite o primeiro numero:   ");
     scanf("%f", &num1);
     printf("Digite o segundo numero:   ");
@@ -19,7 +19,6 @@ int main () {
         printf("3 multiplicacao\n");
         printf("4 divisao\n");
         printf("5 sair\n");
-
 
         printf("Escolha uma opcao:  ");
         scanf("%d", &opcao);
@@ -53,10 +52,10 @@ int main () {
             break;
         case 5:
             return 0;
-            
+
         default:
             printf("opcao invalida\n");
             break;
-        }   
+        }
     }
 }
