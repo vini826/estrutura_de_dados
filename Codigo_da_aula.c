@@ -23,7 +23,7 @@ int main()
         printf("Escolha uma opcao:  ");
         scanf("%d", &opcao);
 
-        printf("opcao escolhida:    %d", opcao);
+        printf("opcao escolhida: %d\n", opcao);
 
         switch (opcao)
         {
