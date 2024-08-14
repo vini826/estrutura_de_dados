@@ -6,7 +6,7 @@ void soma()
     float a, b;
     printf("Digite dois valores separados por espaço:\n");
     scanf("%f %f", &a, &b);
-    printf("O resultado é: %f\n", a + b);
+    printf("O resultado é: %.2f\n", a + b);
 }
 
 void sub()
@@ -14,7 +14,7 @@ void sub()
     float a, b;
     printf("Digite dois valores separados por espaço:\n");
     scanf("%f %f", &a, &b);
-    printf("O resultado é: %f\n", a - b);
+    printf("O resultado é: %.2f\n", a - b);
 }
 
 void mult()
@@ -22,7 +22,7 @@ void mult()
     float a, b;
     printf("Digite dois valores separados por espaço:\n");
     scanf("%f %f", &a, &b);
-    printf("O resultado é: %f\n", a * b);
+    printf("O resultado é: %.2f\n", a * b);
 }
 
 void divs()
@@ -31,14 +31,14 @@ void divs()
     printf("Digite dois valores separados por espaço:\n");
     scanf("%f %f", &a, &b);
     if (b != 0)
-        printf("O resultado é: %f\n", a / b);
+        printf("O resultado é: %.2f\n", a / b);
     else
         printf("Erro: não é possível dividir por zero.\n");
 }
 
 int main()
 {
-    setlocale(LC_ALL, "portuguese_Brazil"); 
+    setlocale(LC_ALL, "portuguese_Brazil");
 
     int escolha;
 
