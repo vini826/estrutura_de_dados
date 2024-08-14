@@ -1,51 +1,54 @@
 #include <stdio.h>
+#include <locale.h>
 
 void soma()
 {
     float a, b;
-    printf("Digite dois valores separados por espa√ßo:\n");
+    printf("Digite dois valores separados por espaÁo:\n");
     scanf("%f %f", &a, &b);
-    printf("O resultado √©: %f\n", a + b);
+    printf("O resultado È: %f\n", a + b);
 }
 
 void sub()
 {
     float a, b;
-    printf("Digite dois valores separados por espa√ßo:\n");
+    printf("Digite dois valores separados por espaÁo:\n");
     scanf("%f %f", &a, &b);
-    printf("O resultado √©: %f\n", a - b);
+    printf("O resultado È: %f\n", a - b);
 }
 
 void mult()
 {
     float a, b;
-    printf("Digite dois valores separados por espa√ßo:\n");
+    printf("Digite dois valores separados por espaÁo:\n");
     scanf("%f %f", &a, &b);
-    printf("O resultado √©: %f\n", a * b);
+    printf("O resultado È: %f\n", a * b);
 }
 
 void divs()
 {
     float a, b;
-    printf("Digite dois valores separados por espa√ßo:\n");
+    printf("Digite dois valores separados por espaÁo:\n");
     scanf("%f %f", &a, &b);
     if (b != 0)
-        printf("O resultado √©: %f\n", a / b);
+        printf("O resultado È: %f\n", a / b);
     else
-        printf("Erro: n√£o √© poss√≠vel dividir por zero.\n");
+        printf("Erro: n„o È possÌvel dividir por zero.\n");
 }
 
 int main()
 {
+    setlocale(LC_ALL, "portuguese_Brazil"); 
+
     int escolha;
 
     do
     {
         printf("Menu:\n");
         printf("1. Soma\n");
-        printf("2. Subtra√ß√£o\n");
-        printf("3. Multiplica√ß√£o\n");
-        printf("4. Divis√£o\n");
+        printf("2. SubtraÁ„o\n");
+        printf("3. MultiplicaÁ„o\n");
+        printf("4. Divis„o\n");
         printf("5. Sair\n");
         printf("Digite a sua escolha: ");
         scanf("%d", &escolha);
@@ -68,7 +71,7 @@ int main()
             printf("Saindo... Obrigado!!!\n");
             break;
         default:
-            printf("N√∫mero inv√°lido!!!\n");
+            printf("N˙mero inv·lido!!!\n");
         }
     } while (escolha != 5);
 
