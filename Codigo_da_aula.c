@@ -1,40 +1,44 @@
 #include <stdio.h>
+#include "soma.c"
+#include "sub.c"
+#include "mult.c"
+#include "divs.c"
 #include <locale.h>
 
-void soma()
-{
-    float a, b;
-    printf("Digite dois valores separados por espaço:\n");
-    scanf("%f %f", &a, &b);
-    printf("O resultado é: %.2f\n", a + b);
-}
+// void soma()
+// {
+//     float a, b;
+//     printf("Digite dois valores separados por espaço:\n");
+//     scanf("%f %f", &a, &b);
+//     printf("O resultado é: %.2f\n", a + b);
+// }
 
-void sub()
-{
-    float a, b;
-    printf("Digite dois valores separados por espaço:\n");
-    scanf("%f %f", &a, &b);
-    printf("O resultado é: %.2f\n", a - b);
-}
+// void sub()
+// {
+//     float a, b;
+//     printf("Digite dois valores separados por espaço:\n");
+//     scanf("%f %f", &a, &b);
+//     printf("O resultado é: %.2f\n", a - b);
+// }
 
-void mult()
-{
-    float a, b;
-    printf("Digite dois valores separados por espaço:\n");
-    scanf("%f %f", &a, &b);
-    printf("O resultado é: %.2f\n", a * b);
-}
+// void mult()
+// {
+//     float a, b;
+//     printf("Digite dois valores separados por espaço:\n");
+//     scanf("%f %f", &a, &b);
+//     printf("O resultado é: %.2f\n", a * b);
+// }
 
-void divs()
-{
-    float a, b;
-    printf("Digite dois valores separados por espaço:\n");
-    scanf("%f %f", &a, &b);
-    if (b != 0)
-        printf("O resultado é: %.2f\n", a / b);
-    else
-        printf("Erro: não é possível dividir por zero.\n");
-}
+// void divs()
+// {
+//     float a, b;
+//     printf("Digite dois valores separados por espaço:\n");
+//     scanf("%f %f", &a, &b);
+//     if (b != 0)
+//         printf("O resultado é: %.2f\n", a / b);
+//     else
+//         printf("Erro: não é possível dividir por zero.\n");
+// }
 
 int main()
 {
