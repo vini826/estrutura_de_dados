@@ -1,61 +1,76 @@
 #include <stdio.h>
 
+void soma()
+{
+    float a, b;
+    printf("Digite dois valores separados por espaço:\n");
+    scanf("%f %f", &a, &b);
+    printf("O resultado é: %f\n", a + b);
+}
+
+void sub()
+{
+    float a, b;
+    printf("Digite dois valores separados por espaço:\n");
+    scanf("%f %f", &a, &b);
+    printf("O resultado é: %f\n", a - b);
+}
+
+void mult()
+{
+    float a, b;
+    printf("Digite dois valores separados por espaço:\n");
+    scanf("%f %f", &a, &b);
+    printf("O resultado é: %f\n", a * b);
+}
+
+void divs()
+{
+    float a, b;
+    printf("Digite dois valores separados por espaço:\n");
+    scanf("%f %f", &a, &b);
+    if (b != 0)
+        printf("O resultado é: %f\n", a / b);
+    else
+        printf("Erro: não é possível dividir por zero.\n");
+}
+
 int main()
 {
-    int opcao;
-    float num1, num2, resultado;
+    int escolha;
 
-    // coleta de dados
-    printf("Digite o primeiro numero:   ");
-    scanf("%f", &num1);
-    printf("Digite o segundo numero:   ");
-    scanf("%f", &num2);
-
-    while (1)
+    do
     {
-        printf("calculadora simples\n");
-        printf("1 adicao\n");
-        printf("2 subtracao\n");
-        printf("3 multiplicacao\n");
-        printf("4 divisao\n");
-        printf("5 sair\n");
+        printf("Menu:\n");
+        printf("1. Soma\n");
+        printf("2. Subtração\n");
+        printf("3. Multiplicação\n");
+        printf("4. Divisão\n");
+        printf("5. Sair\n");
+        printf("Digite a sua escolha: ");
+        scanf("%d", &escolha);
 
-        printf("Escolha uma opcao:  ");
-        scanf("%d", &opcao);
-
-        printf("opcao escolhida: %d\n", opcao);
-
-        switch (opcao)
+        switch (escolha)
         {
         case 1:
-            resultado = num1 + num2;
-            printf("resultado:  %f\n", resultado);
+            soma();
             break;
         case 2:
-            resultado = num1 - num2;
-            printf("resultado:  %f\n", resultado);
+            sub();
             break;
         case 3:
-            resultado = num1 * num2;
-            printf("resultado:  %f\n", resultado);
+            mult();
             break;
         case 4:
-            if (num2 != 0)
-            {
-                resultado = num1 / num2;
-                printf("resultado:  %f\n", resultado);
-            }
-            else
-            {
-                printf("erro, divisao por zero\n");
-            }
+            divs();
             break;
         case 5:
-            return 0;
-
-        default:
-            printf("opcao invalida\n");
+            printf("Saindo... Obrigado!!!\n");
             break;
+        default:
+            printf("Número inválido!!!\n");
         }
-    }
+    } while (escolha != 5);
+
+    return 0;
 }
