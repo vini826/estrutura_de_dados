@@ -9,11 +9,11 @@ int main()
     printf("Digite 5 numeros inteiros:\n");
     for (i = 0; i < 5; i++)
     {
-        scanf("%d", &numeros[i]); // Corrigido: passar o endereço do elemento
+        scanf("%d", &numeros[i]); 
     }
 
     printf("Os numeros na ordem inversa sao:\n");
-    for (i = 4; i >= 0; i--) // Corrigido: decrementar até `i` ser 0
+    for (i = 4; i >= 0; i--) 
     {
         printf("%d\n", numeros[i]);
     }
