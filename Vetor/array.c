@@ -9,13 +9,14 @@ int main()
     printf("Digite 5 numeros inteiros:\n");
     for (i = 0; i < 5; i++)
     {
-        scanf("%d", &numeros[i]); 
+        printf("Digite o %d numero:     \n ", i);
+        scanf("%d", &numeros[i]);
     }
 
     printf("Os numeros na ordem inversa sao:\n");
-    for (i = 4; i >= 0; i--) 
+    for (i = 4; i >= 0; i--)
     {
-        printf("%d\n", numeros[i]);
+        printf("%d = %d\n", i, numeros[i]);
     }
 
     return 0;
