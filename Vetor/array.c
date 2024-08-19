@@ -9,7 +9,7 @@ int main()
     printf("Digite 5 numeros inteiros:\n");
     for (i = 0; i < 5; i++)
     {
-        printf("Digite o %d numero:     \n ", i);
+        printf("Digite o %d numero:     ", i);
         scanf("%d", &numeros[i]);
     }
 
